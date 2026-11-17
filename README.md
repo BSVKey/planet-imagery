@@ -40,3 +40,4 @@ are not science data; use the original products for measurement.
 
 - `worlds/<body>/<z>/<x>/<y>.jpg` and `worlds/<body>/full.jpg`: globe tiles for Mercury, Venus, Phobos, Deimos, Jupiter, Io, Europa, Ganymede, Callisto, Saturn (and `ring.png`), Titan, Enceladus, Mimas, Tethys, Dione, Rhea and Iapetus, from USGS Astrogeology global mosaics (NASA/JPL and partners; credits in index.json). Jupiter and Saturn: Solar System Scope textures, CC BY 4.0. Built with `tools/build_worlds.py`.
 - `names/earth.json`: Earth feature names from Natural Earth (public domain), built with `tools/build_earth_names.py`.
+- `tools/build_more.py`: sharper imagery (Mercury 250 m greyscale, Venus Magellan radar, Europa, Ganymede and Dione at level 5), Deimos from the Viking mosaic by P. Stooke, C. Jongkind and M. Arntz (NASA PDS Small Bodies Node), and terrain for Mercury, Venus and Phobos.
