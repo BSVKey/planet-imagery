@@ -25,3 +25,9 @@ processed products from the U.S. Geological Survey Astrogeology Science Center. 
 imagery is generally not subject to copyright in the United States; credit the sources above when
 you reuse it. The tiles here are reprojected, contrast-stretched and compressed for web display and
 are not science data; use the original products for measurement.
+
+## Terrain heights and Moon topography
+
+- `terrain/<body>/<z>/<x>/<y>.bin`: 65 x 65 little-endian Int16 heights in metres, levels 0 to 5, using the same geographic tiling as the imagery. Moon: LRO LOLA global DEM 118 m. Mars: MGS MOLA global DEM 463 m (both NASA/GSFC, via USGS Astrogeology).
+- `relief/moon/<z>/<x>/<y>.jpg`: colour shaded relief made from LOLA, levels 0 to 4.
+- Built with `tools/build_terrain.py`.
