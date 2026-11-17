@@ -15,7 +15,7 @@ for body in sys.argv[2:]:
         origin = r["origin"].strip()
         if len(origin) > 180: origin = origin[:177].rsplit(" ", 1)[0] + "…"
         link = r["link"].rsplit("/", 1)[-1]
-        rows.append([r["clean_name"] or r["name"], r["code"], round(float(r["center_lat"]), 3), round(lon, 3),
+        rows.append([r["name"] or r["clean_name"], r["code"], round(float(r["center_lat"]), 3), round(lon, 3),
                      round(float(r["diameter"] or 0), 1), origin, int(link) if link.isdigit() else 0])
     rows.sort(key=lambda x: -x[4])
     json.dump({"credit": "IAU / USGS Gazetteer of Planetary Nomenclature", "types": types, "f": rows},
