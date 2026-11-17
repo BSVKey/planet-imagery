@@ -35,3 +35,8 @@ are not science data; use the original products for measurement.
 ## Feature names
 
 - `names/<body>.json`: IAU-approved feature names from the USGS Gazetteer of Planetary Nomenclature (name, type code, lat, lon, diameter km, origin, gazetteer id), largest first. Built with `tools/build_names.py`.
+
+## More worlds
+
+- `worlds/<body>/<z>/<x>/<y>.jpg` and `worlds/<body>/full.jpg`: globe tiles for Mercury, Venus, Phobos, Deimos, Jupiter, Io, Europa, Ganymede, Callisto, Saturn (and `ring.png`), Titan, Enceladus, Mimas, Tethys, Dione, Rhea and Iapetus, from USGS Astrogeology global mosaics (NASA/JPL and partners; credits in index.json). Jupiter and Saturn: Solar System Scope textures, CC BY 4.0. Built with `tools/build_worlds.py`.
+- `names/earth.json`: Earth feature names from Natural Earth (public domain), built with `tools/build_earth_names.py`.
